@@ -1,0 +1,19 @@
+.top{
+  background-image: url(../image/top-bg.png);
+  background-position: center;
+  background-size: cover;
+  height: 674px;
+  position: relative;//タイトルの中央寄せ
+  margin-top: 100px;
+  .top-title{
+    font-size: 50px;
+    color: cl(white);
+    // タイトルの中央寄せ
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    // ここまでタイトルの中央寄せ
+    text-align: center;
+  }
+}
