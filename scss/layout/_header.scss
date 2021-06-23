@@ -1,0 +1,38 @@
+.header{
+  background-color: cl(primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;//追従
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+    .header-fixed{
+      .header-logo{
+        width: 150px;
+        margin-left: 30px;
+      }
+      .nav-btn{
+        display: none;
+      }
+    }
+    .nav {
+      .nav-warp{
+        .nav-list{
+          display: flex;
+          margin-right: 40px;
+          .item{
+            + .item{
+              margin-left: 20px;
+            }
+            a{
+              color: white;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+}

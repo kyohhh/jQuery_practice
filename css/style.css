@@ -13,3 +13,64 @@
     display: block;
   }
 }
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Hiragino Mincho Pro", serif;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  background-color: #4D0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header .header-fixed .header-logo {
+  width: 150px;
+  margin-left: 30px;
+}
+
+.header .header-fixed .nav-btn {
+  display: none;
+}
+
+.header .nav .nav-warp .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
+}
+
+.header .nav .nav-warp .nav-list .item + .item {
+  margin-left: 20px;
+}
+
+.header .nav .nav-warp .nav-list .item a {
+  color: white;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
