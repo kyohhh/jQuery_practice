@@ -75,6 +75,44 @@ img {
   font-size: 18px;
 }
 
+.cmn-section.-black {
+  background-color: #000;
+}
+
+.cmn-title {
+  color: #fff;
+  text-align: center;
+}
+
+.cmn-title .main {
+  display: block;
+  font-size: 32px;
+}
+
+.cmn-title .sub {
+  display: block;
+  font-size: 20px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+.cmn-link a {
+  color: #fff;
+  background-color: #B8860BEA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 155px;
+  height: 37px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
 .top {
   background-image: url(../image/top-bg.png);
   background-position: center;
@@ -93,5 +131,74 @@ img {
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
   text-align: center;
+}
+
+.features {
+  padding-top: 80px;
+}
+
+.features .inner .features-cont {
+  padding-top: 60px;
+}
+
+.features .inner .features-cont .features-list .features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+.features .inner .features-cont .features-list .features-item:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+}
+
+.features .inner .features-cont .features-list .features-item:nth-child(odd) .text {
+  margin-right: 40px;
+}
+
+.features .inner .features-cont .features-list .features-item:nth-child(odd) .image {
+  margin-right: 40px;
+}
+
+.features .inner .features-cont .features-list .features-item:nth-child(even) .text {
+  margin-left: 40px;
+}
+
+.features .inner .features-cont .features-list .features-item:nth-child(even) .image {
+  margin-left: 40px;
+}
+
+.features .inner .features-cont .features-list .features-item .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 40px;
+}
+
+.features .inner .features-cont .features-list .features-item .text .title {
+  color: #FFFFDD;
+  font-size: 28px;
+}
+
+.features .inner .features-cont .features-list .features-item .text .desc {
+  margin-top: 50px;
+}
+
+.features .inner .features-cont .features-list .features-item .text .features-link {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.features .inner .features-cont .features-list .features-item .text .features-link a {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.features .inner .features-cont .features-list .features-item .image {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

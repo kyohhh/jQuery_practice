@@ -1,0 +1,33 @@
+.cmn-section{
+  &.-black{
+    background-color: cl(black);
+  }
+}
+
+.cmn-title{
+  color: cl(white);
+  text-align: center;
+  .main{
+    display: block;
+    font-size: 32px;
+  }
+  .sub{
+    display: block;
+    font-size: 20px;
+    @include TimesNewRoman;
+  }
+}
+
+.cmn-link{
+  a{
+    color: cl(white);
+    background-color: cl(gold);
+    display: flex;
+    width: 155px;
+    height: 37px;
+    align-items: center;//y軸を中央
+    justify-content: center;//x軸を中央
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}

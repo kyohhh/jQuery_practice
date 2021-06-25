@@ -1,0 +1,55 @@
+.features{
+  padding-top: 80px;
+  .inner{
+    .features-cont{
+      padding-top: 60px;
+      .features-list{
+        .features-item{
+          display: flex;
+          color: cl(white);
+          &:nth-child(odd){
+            flex-flow: row-reverse;//奇数のみ指定,evenだと偶数
+            .text{
+              margin-right: 40px;
+            }
+            .image{
+              margin-right: 40px;
+            }
+          }
+          &:nth-child(even){
+            .text{
+              margin-left: 40px;
+            }
+            .image{
+              margin-left: 40px;
+            }
+          }
+          .text{
+            flex: 1;//image指定との差分を自動計算
+            padding-top: 40px;
+            .title{
+              color: cl(baige);
+              font-size: 28px;
+            }
+            .desc{
+              margin-top: 50px;
+            }
+            .features-link{
+              padding-top: 60px;
+              padding-bottom: 40px;
+              text-align: center;
+              a{
+                margin-right: auto;
+                margin-left: auto;
+              }
+            }
+          }
+          .image{
+            width: percentage(640 / 1280);//imageサイズ指定
+          }
+        }
+      }
+    }
+  }
+}
+
