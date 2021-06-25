@@ -201,4 +201,85 @@ img {
 .features .inner .features-cont .features-list .features-item .image {
   width: 50%;
 }
+
+.plan {
+  padding-top: 80px;
+}
+
+.rec {
+  padding-top: 60px;
+}
+
+.rec .rec-slick .rec-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.rec .rec-slick .rec-item .text {
+  background-color: #fff;
+  padding: 25px 25px 25px 50px;
+  color: #333333;
+}
+
+.rec .rec-slick .rec-item .text .price {
+  padding-top: 60px;
+}
+
+.rec .rec-slick .rec-item .text .price > span {
+  color: #FF0000;
+}
+
+.service .service-warp {
+  padding-top: 100px;
+}
+
+.service .service-warp .service-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.service .service-warp .service-list .service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+  background-color: #6E6E6E;
+  width: 30.46875%;
+}
+
+.service .service-warp .service-list .service-item + .service-item {
+  margin-left: 20px;
+}
+
+.service .service-warp .service-list .service-item .text .title {
+  font-size: 28px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.service .service-warp .service-list .service-item .text .desc {
+  padding: 40px 20px 50px 20px;
+  font-size: 15px;
+}
+
+.service .service-warp .service-list .service-item .image {
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*# sourceMappingURL=style.css.map */
