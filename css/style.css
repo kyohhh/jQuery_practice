@@ -344,4 +344,36 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
+
+.faq {
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+
+.faq .faq-cont {
+  padding-top: 60px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.faq .faq-cont .faq-list {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.faq .faq-cont .faq-list .faq-item > a {
+  background-color: #fff;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.faq .faq-cont .faq-list .faq-item .detail {
+  background-color: #F2F2F2;
+  padding: 25px 50px;
+  border-bottom: 1px solid #E5E5E5;
+}
 /*# sourceMappingURL=style.css.map */
