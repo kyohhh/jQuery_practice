@@ -47,7 +47,7 @@
       .service-item{
         display: flex;
         flex-flow: column-reverse;
-        background-color: cl(grey);
+        background-color: cl(lightgrey);
         width: percentage(390 / 1280);
         + .service-item{
           margin-left: 20px;

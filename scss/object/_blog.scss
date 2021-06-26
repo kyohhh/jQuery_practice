@@ -1,0 +1,43 @@
+.blog{
+  padding-top: 80px;
+  .blog-cont{
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+  .blog-list{
+    padding-top: 60px;
+    .row{
+      display: flex;
+      + .row{
+        margin-top: 30px;
+      }
+    }
+    dt{
+      color: cl(white);
+      font-size: 14px;
+      background-color: cl(primary);
+      width: 157px;
+      height: 30px;
+      // 文字の中央寄せ
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+    }
+    dd{
+      flex: 1;//大きさを指定してレスポンシブ対応
+      >a{//aタグ全体にはgeneral.scssで設定した#blackが生きているため
+        color: cl(white);
+        font-size: 24px;
+        text-decoration: underline;
+      }
+    }
+  }
+  .blog-link{
+    padding-top: 60px;
+    a{
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
