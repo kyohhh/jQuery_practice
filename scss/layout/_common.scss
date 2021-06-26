@@ -15,6 +15,11 @@
     display: block;
     font-size: 20px;
     @include TimesNewRoman;
+    margin-top: 50px;
+    text-transform: capitalize;
+    &.-faq{
+      text-transform: uppercase;
+    }
   }
 }
 

@@ -93,6 +93,12 @@ img {
   display: block;
   font-size: 20px;
   font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+
+.cmn-title .sub.-faq {
+  text-transform: uppercase;
 }
 
 .cmn-link a {
@@ -111,6 +117,45 @@ img {
           justify-content: center;
   border-radius: 8px;
   font-size: 14px;
+}
+
+.footer {
+  background-color: #4D0000;
+  padding-top: 60px;
+  padding-bottom: 15px;
+  border-top: 1px solid #6E6E6E;
+}
+
+.footer .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .nav-list .nav-item + .nav-item {
+  margin-left: 16px;
+}
+
+.footer .nav-list .nav-item a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer .footer-logo {
+  width: 188px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer .copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
 }
 
 .top {
