@@ -1,3 +1,4 @@
+// スライダー
 $(function () {
   $('.rec-slick').slick({
     infinite: true,
@@ -9,5 +10,14 @@ $(function () {
     arrows: false,//ボタン非表示
     centerPadding: '100px',//横切れ端の見え方
     centerMode: true
+  });
+});
+
+$(function () {
+  $('#nav-btn').on('click', function () {//nav-btnClassをクリックしたら
+    $(this).toggleClass('-active');//-activeClassを付け外しする
+    $('.nav').toggleClass('-active');//-activeClassを付け外しする
+
+
   });
 });
