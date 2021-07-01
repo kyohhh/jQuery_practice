@@ -11,8 +11,6 @@
           @include overTab{
             display: flex;
           }
-          
-          
           &:nth-child(odd){//奇数のみ指定,evenだと偶数
             @include overTab{
               flex-flow: row-reverse;
