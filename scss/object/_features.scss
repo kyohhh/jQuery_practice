@@ -5,34 +5,67 @@
       padding-top: 60px;
       .features-list{
         .features-item{
-          display: flex;
           color: cl(white);
-          &:nth-child(odd){
-            flex-flow: row-reverse;//奇数のみ指定,evenだと偶数
+          display: flex;
+          flex-flow: column-reverse;//テキストとimageの上下反転
+          @include overTab{
+            display: flex;
+          }
+          
+          
+          &:nth-child(odd){//奇数のみ指定,evenだと偶数
+            @include overTab{
+              flex-flow: row-reverse;
+            }
             .text{
-              margin-right: 40px;
+
+              @include overTab{
+                margin-right: 40px;
+              }
             }
             .image{
-              margin-right: 40px;
+              @include overTab{
+                margin-right: 40px;
+              }
             }
           }
           &:nth-child(even){
+            @include overTab{
+              flex-flow: row;//rowで初期化
+            }
             .text{
-              margin-left: 40px;
+              @include overTab{
+                margin-left: 40px;
+              }
             }
             .image{
-              margin-left: 40px;
+              @include overTab{
+                margin-left: 40px;
+              }
             }
           }
           .text{
-            flex: 1;//image指定との差分を自動計算
+            padding-left: 28px;
+            padding-right: 28px;
             padding-top: 40px;
+            @include overTab{
+              flex: 1;//image指定との差分を自動計算
+              padding-left: 0;
+              padding-right: 0;
+            }
             .title{
               color: cl(baige);
-              font-size: 28px;
+              font-size: 18px;
+              @include overTab{
+                font-size: 28px;
+              }
             }
             .desc{
               margin-top: 50px;
+              font-size: 16px;
+              @include overTab{
+                font-size: 18px
+              }
             }
             .features-link{
               padding-top: 60px;
@@ -45,7 +78,9 @@
             }
           }
           .image{
-            width: percentage(640 / 1280);//imageサイズ指定
+            @include overTab{
+              width: percentage(640 / 1280);//imageサイズ指定
+            }
           }
         }
       }

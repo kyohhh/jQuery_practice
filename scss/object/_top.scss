@@ -1,12 +1,15 @@
 .top{
-  background-image: url(../image/top-bg.png);
+  background-image: url(../image/top-mv_sp.png);
   background-position: center;
   background-size: cover;
   height: 674px;
   position: relative;//タイトルの中央寄せ
   margin-top: 100px;
+  @include overTab{
+    background-image: url(../image/top-bg.png);
+
+  }
   .top-title{
-    font-size: 50px;
     color: cl(white);
     // タイトルの中央寄せ
     position: absolute;
@@ -15,5 +18,10 @@
     transform: translateY(-50%) translateX(-50%);
     // ここまでタイトルの中央寄せ
     text-align: center;
+    font-size: 35px;
+    width: 100%;//改行崩れを防ぐ360pxで崩れなければok
+    @include overTab{
+      font-size: 50px;
+    }
   }
 }
