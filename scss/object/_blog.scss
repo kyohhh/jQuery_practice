@@ -1,8 +1,12 @@
 .blog{
   padding-top: 80px;
   .blog-cont{
-    margin-right: 70px;
-    margin-left: 70px;
+    margin-right: 30px;
+    margin-left: 30px;
+    @include overTab{
+      margin-right: 70px;
+      margin-left: 70px;
+    }
   }
   .blog-list{
     padding-top: 60px;
@@ -14,27 +18,37 @@
     }
     dt{
       color: cl(white);
-      font-size: 14px;
+      font-size: 13px;
       background-color: cl(primary);
-      width: 157px;
       height: 30px;
       // 文字の中央寄せ
       display: flex;
       align-items: center;
       justify-content: center;
       margin-right: 20px;
+      width: 75px;
+      @include overTab{
+        width: 157px;
+        font-size: 13px;
+      }
     }
     dd{
       flex: 1;//大きさを指定してレスポンシブ対応
       >a{//aタグ全体にはgeneral.scssで設定した#blackが生きているため
         color: cl(white);
-        font-size: 24px;
+        font-size: 16px;
         text-decoration: underline;
+        @include overTab{
+          font-size: 24px;
+        }
       }
     }
   }
   .blog-link{
-    padding-top: 60px;
+    padding-top: 40px;
+    @include overTab{
+      padding-top: 50px;
+    }
     a{
       margin-right: auto;
       margin-left: auto;
