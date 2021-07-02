@@ -13,18 +13,26 @@
         >a{
           background-color: cl(white);
           display: block;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          text-align: center;
+          padding: 14px;
           border-bottom: 1px solid #E5E5E5;
+          @include overTab{
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
           .title{
 
           }
         }
         .detail{
-          background-color: cl(lightgrey);
-          padding: 25px 50px;
           border-bottom: 1px solid #E5E5E5;
+          background-color: cl(lightgrey);
+          padding: 14px;
+          display: none;
+          @include overTab{
+          padding: 25px 50px;
+          }
+          
         }
       }
     }

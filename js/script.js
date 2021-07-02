@@ -29,7 +29,13 @@ $(function () {
   $('#nav-btn').on('click', function () {//nav-btnClassをクリックしたら
     $(this).toggleClass('-active');//-activeClassを付け外しする
     $('.nav').toggleClass('-active');//-activeClassを付け外しする
-
-
   });
+});
+
+//FAQ
+$(function () {
+  $('.js-accordion').on('click', function () {
+    $(this).next().slideToggle();
+    //.js-accordionの次の要素をスライドトグルで付け外し
+  })
 });

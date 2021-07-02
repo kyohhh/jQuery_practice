@@ -659,15 +659,28 @@ img {
 .faq .faq-cont .faq-list .faq-item > a {
   background-color: #fff;
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
+  padding: 14px;
   border-bottom: 1px solid #E5E5E5;
 }
 
+@media print, screen and (min-width: 768px) {
+  .faq .faq-cont .faq-list .faq-item > a {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .faq .faq-cont .faq-list .faq-item .detail {
-  background-color: #F2F2F2;
-  padding: 25px 50px;
   border-bottom: 1px solid #E5E5E5;
+  background-color: #F2F2F2;
+  padding: 14px;
+  display: none;
+}
+
+@media print, screen and (min-width: 768px) {
+  .faq .faq-cont .faq-list .faq-item .detail {
+    padding: 25px 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
