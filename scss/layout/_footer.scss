@@ -10,12 +10,19 @@
   }
 
   .nav-list{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     
+    @include overTab{
+      display: flex;
+      justify-content: center;
+    }
     .nav-item{
       +.nav-item{
-        margin-left: 16px;
+        margin-top: 20px;
+        @include overTab{
+          margin-top: 0;
+          margin-left: 35px;
+        }
       }
       a {
         font-size: 16px;

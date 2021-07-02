@@ -252,16 +252,29 @@ img {
 }
 
 .footer .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 768px) {
+  .footer .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer .nav-list .nav-item + .nav-item {
-  margin-left: 16px;
+  margin-top: 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .footer .nav-list .nav-item + .nav-item {
+    margin-top: 0;
+    margin-left: 35px;
+  }
 }
 
 .footer .nav-list .nav-item a {
