@@ -39,3 +39,8 @@ $(function () {
     //.js-accordionの次の要素をスライドトグルで付け外し
   })
 });
+
+//wow.js
+$(function () {
+  new WOW().init();
+});
