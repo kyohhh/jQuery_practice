@@ -25,7 +25,7 @@
                                 </p>
                                 <div class="features-link cmn-link"><a href="#">お部屋の詳細</a></div>
                             </div>
-                            <div class="image"><img src="./image/feature-item01.png" alt=""></div>
+                            <div class="image"><img src="<?php echo get_template_directory_uri(); ?>/image/feature-item01.png" alt=""></div>
                         </li>
                         <li class="features-item wow animate_animated animate_fadeIn" data-wow-offset="100">
                             <div class="text">
@@ -36,7 +36,7 @@
                                 </p>
                                 <div class="features-link cmn-link"><a href="#">コース料理の詳細</a></div>
                             </div>
-                            <div class="image"><img src="./image/feature-item02.png" alt=""></div>
+                            <div class="image"><img src="<?php echo get_template_directory_uri(); ?>/image/feature-item02.png" alt=""></div>
                         </li>
                         <li class="features-item wow animate_animated animate_fadeIn" data-wow-offset="100">
                             <div class="text">
@@ -48,7 +48,7 @@
                                     トハウススパ。心と体のリフレッシュに最適です。</p>
                                 <div class="features-link cmn-link"><a href="#">温泉の詳細</a></div>
                             </div>
-                            <div class="image"><img src="./image/feature-item03.png" alt=""></div>
+                            <div class="image"><img src="<?php echo get_template_directory_uri(); ?>/image/feature-item03.png" alt=""></div>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +69,7 @@
                                 <div class="price">お値段：<span>6000円 </span>/ 人</div>
                             </div>
                             <div class="image">
-                                <img src="./image/rec-plan01.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/rec-plan01.png" alt="">
                             </div>
                         </div>
                         <div class="rec-item">
@@ -78,7 +78,7 @@
                                 <div class="price">お値段：<span>2000円 </span>/ 人</div>
                             </div>
                             <div class="image">
-                                <img src="./image/rec-plan02.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/rec-plan02.png" alt="">
                             </div>
                         </div>
                         <div class="rec-item">
@@ -87,7 +87,7 @@
                                 <div class="price">お値段：<span>8000円 </span>/ 人</div>
                             </div>
                             <div class="image">
-                                <img src="./image/rec-plan03.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/rec-plan03.png" alt="">
                             </div>
                         </div>
                         <div class="rec-item">
@@ -96,7 +96,7 @@
                                 <div class="price">お値段：<span>6000円 </span>/ 人</div>
                             </div>
                             <div class="image">
-                                <img src="./image/rec-plan04.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/rec-plan04.png" alt="">
                             </div>
                         </div>
                         <div class="rec-item">
@@ -105,7 +105,7 @@
                                 <div class="price">お値段：<span>8000円 </span>/ 人</div>
                             </div>
                             <div class="image">
-                                <img src="./image/rec-plan05.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/rec-plan05.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                                     <p class="desc">極楽亭の公式ホームページでのご宿泊料金 は、どの予約サイトよりも最低価格である ことをお約束いたします。</p>
                                 </div>
                                 <div class="image">
-                                    <img src="./image/service-item01.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/image/service-item01.png" alt="">
                                 </div>
                             </li>
                             <li class="service-item">
@@ -127,7 +127,7 @@
                                         構築しています。</p>
                                 </div>
                                 <div class="image">
-                                    <img src="./image/service-item02.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/image/service-item02.png" alt="">
                                 </div>
                             </li>
                             <li class="service-item">
@@ -136,7 +136,7 @@
                                     <p class="desc">会員の方は、会員料金でご宿泊いただける ほか、オンラインクーポンなどの限定メニ ューもご利用いただけます。</p>
                                 </div>
                                 <div class="image">
-                                    <img src="./image/service-item03.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/image/service-item03.png" alt="">
                                 </div>
                             </li>
                         </ul>
