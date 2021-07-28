@@ -1,126 +1,127 @@
-.header{
-    .header-fixed{
-      background-color: cl(primary);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: fixed;//追従
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      z-index: 2;//top画像の全面に表示
-      .header-logo{
-        width: 150px;
-        margin-left: 30px;
+.header {
+  .header-fixed {
+    background-color: cl(primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; //追従
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 2; //top画像の全面に表示
+    .header-logo {
+      width: 150px;
+      margin-left: 30px;
+    }
+    .nav-btn {
+      width: 52px;
+      height: 30px;
+      // 初期値に戻す
+      appearance: none;
+      background: transparent;
+      border: none;
+      font: inherit; //初期化
+      outline: none;
+      // 初期値に戻す
+      position: relative; //ボタンの親要素
+      @include overTab {
+        display: none;
       }
-      .nav-btn{
-        width: 52px;
-        height: 30px;
-        // 初期値に戻す
-        appearance: none;
-        background: transparent;
-        border: none;
-        font: inherit;//初期化
-        outline: none;
-        // 初期値に戻す
-        position: relative;//ボタンの親要素
-        @include overTab{
-          display: none;
-        }
-        &.-active{
-          span{
-            &:first-child{
-              top: 0;
-              bottom: 0;
-              margin: auto;
-              transition: transform 0.3s ease;
-              transform: rotate(45deg);
-            }
-            &:nth-child(2){
-              transform: rotate(45deg);
-            }
-            &:last-child{
-              transform: rotate(-45deg);
-            }
+      &.-active {
+        span {
+          &:first-child {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            transition: transform 0.3s ease;
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            transform: rotate(45deg);
+          }
+          &:last-child {
+            transform: rotate(-45deg);
           }
         }
-        span{//ナビボタン
-          position: absolute;
-          width: 100%;
-          height: 3px;
-          background-color: cl(white);
-          display: block;
-          transition: transform 0.3s ease;
-          right: 30px;
-            &:first-child{
-              top: 0;
-            }
-            &:nth-child(2){
-              top: 0;
-              bottom: 0;
-              margin: auto;
-            }
-            &:last-child{
-              bottom: 0;
-            }
+      }
+      span {
+        //ナビボタン
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: cl(white);
+        display: block;
+        transition: transform 0.3s ease;
+        right: 30px;
+        &:first-child {
+          top: 0;
+        }
+        &:nth-child(2) {
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        &:last-child {
+          bottom: 0;
         }
       }
     }
-    .nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #000000CC;
-      padding-top: 145px;
-      z-index: 1;
-      opacity: 0;
-      visibility: hidden;//ナビ非表示
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000cc;
+    padding-top: 145px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden; //ナビ非表示
+    transition: opacity 0.3s ease;
+    @include overTab {
+      // position: static;余白
+      width: initial;
+      background-color: transparent;
+      padding-top: 0;
+      z-index: 3; //リスト表示される
+      left: inherit; //レフト初期化
+      right: 0;
+      top: 38px;
+      opacity: 1;
+      visibility: visible; //ナビ表示
+    }
+    &.-active {
+      opacity: 1; //不透明度
+      visibility: visible; //表示
       transition: opacity 0.3s ease;
-      @include overTab{
-        // position: static;余白
-        width: initial;
-        background-color: transparent;
-        padding-top: 0;
-        z-index: 3;//リスト表示される
-        left: inherit;//レフト初期化
-        right: 0;
-        top: 38px;
-        opacity: 1;
-      visibility: visible;//ナビ表示
-      }
-      &.-active{
-        opacity: 1;//不透明度
-        visibility: visible;//表示
-        transition: opacity 0.3s ease;
-      }
-      .nav-warp{
-        .nav-list{
-          text-align: center;
-          padding-bottom: 45px;
-          @include overTab{
+    }
+    .nav-warp {
+      .nav-list {
+        text-align: center;
+        padding-bottom: 45px;
+        @include overTab {
           display: flex;
           margin-right: 40px;
-          }
-          .item{
-            + .item{
-              margin-top: 20px;
-              @include overTab{
-                margin-top: 0;
-                margin-left: 20px;
-              }
+        }
+        .item {
+          + .item {
+            margin-top: 20px;
+            @include overTab {
+              margin-top: 0;
+              margin-left: 20px;
             }
-            a{
-              color: white;
-              font-size: 24px;
-              @include overTab{
-                font-size: 18px;
-              }
+          }
+          a {
+            color: white;
+            font-size: 24px;
+            @include overTab {
+              font-size: 18px;
             }
           }
         }
       }
     }
+  }
 }

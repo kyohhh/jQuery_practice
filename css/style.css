@@ -1,10 +1,3 @@
-/*
-Theme Name: Gokurakutei
-Author: kyohey
-Description: 架空の温泉旅館のホームページです
-Version: 5.7
-*/
-
 @media print, screen and (min-width: 768px) {
   ._sp {
     display: none;
@@ -25,8 +18,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Hiragino Mincho Pro", serif;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -40,16 +31,16 @@ img {
 }
 
 .header .header-fixed {
-  background-color: #4d0000;
+  background-color: #4D0000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -68,8 +59,8 @@ img {
   width: 52px;
   height: 30px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: transparent;
   border: none;
   font: inherit;
@@ -92,23 +83,17 @@ img {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .header .header-fixed .nav-btn.-active span:nth-child(2) {
-  top: 0;
-  bottom: 0;
-  margin: auto;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .header .header-fixed .nav-btn.-active span:last-child {
-  top: 0;
-  bottom: 0;
-  margin: auto;
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header .header-fixed .nav-btn span {
@@ -176,7 +161,6 @@ img {
 .header .nav .nav-warp .nav-list {
   text-align: center;
   padding-bottom: 45px;
-  list-style: none;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -227,8 +211,7 @@ img {
 .cmn-title .sub {
   display: block;
   font-size: 20px;
-  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN",
-    "Yu Mincho", "MS PMincho", serif;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   margin-top: 34px;
   text-transform: capitalize;
 }
@@ -245,24 +228,24 @@ img {
 
 .cmn-link a {
   color: #fff;
-  background-color: #b8860bea;
+  background-color: #B8860BEA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 155px;
   height: 37px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 8px;
   font-size: 14px;
 }
 
 .footer {
-  background-color: #4d0000;
+  background-color: #4D0000;
   padding-top: 60px;
   padding-bottom: 15px;
   border-top: 1px solid #6e6e6e;
@@ -270,7 +253,6 @@ img {
 
 .footer .nav-list {
   text-align: center;
-  list-style: none;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -279,9 +261,8 @@ img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    list-style: none;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -320,9 +301,8 @@ img {
   background-position: center;
   background-size: cover;
   height: 674px;
-  width: auto;
   position: relative;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -337,7 +317,7 @@ img {
   top: 50%;
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
   text-align: center;
   font-size: 35px;
   width: 100%;
@@ -357,11 +337,6 @@ img {
   padding-top: 60px;
 }
 
-.features .inner .features-cont .features-list {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .features .inner .features-cont .features-list .features-item {
   color: #fff;
   display: -webkit-box;
@@ -369,8 +344,8 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-  -ms-flex-flow: column-reverse;
-  flex-flow: column-reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -385,64 +360,40 @@ img {
   .features .inner .features-cont .features-list .features-item:nth-child(odd) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -ms-flex-flow: row-reverse;
-    flex-flow: row-reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
   }
 }
 
 @media print, screen and (min-width: 768px) {
-  .features
-    .inner
-    .features-cont
-    .features-list
-    .features-item:nth-child(odd)
-    .text {
+  .features .inner .features-cont .features-list .features-item:nth-child(odd) .text {
     margin-right: 40px;
   }
 }
 
 @media print, screen and (min-width: 768px) {
-  .features
-    .inner
-    .features-cont
-    .features-list
-    .features-item:nth-child(odd)
-    .image {
+  .features .inner .features-cont .features-list .features-item:nth-child(odd) .image {
     margin-right: 40px;
   }
 }
 
 @media print, screen and (min-width: 768px) {
-  .features
-    .inner
-    .features-cont
-    .features-list
-    .features-item:nth-child(even) {
+  .features .inner .features-cont .features-list .features-item:nth-child(even) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-flow: row;
-    flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
   }
 }
 
 @media print, screen and (min-width: 768px) {
-  .features
-    .inner
-    .features-cont
-    .features-list
-    .features-item:nth-child(even)
-    .text {
+  .features .inner .features-cont .features-list .features-item:nth-child(even) .text {
     margin-left: 40px;
   }
 }
 
 @media print, screen and (min-width: 768px) {
-  .features
-    .inner
-    .features-cont
-    .features-list
-    .features-item:nth-child(even)
-    .image {
+  .features .inner .features-cont .features-list .features-item:nth-child(even) .image {
     margin-left: 40px;
   }
 }
@@ -456,15 +407,15 @@ img {
 @media print, screen and (min-width: 768px) {
   .features .inner .features-cont .features-list .features-item .text {
     -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 .features .inner .features-cont .features-list .features-item .text .title {
-  color: #ffffdd;
+  color: #FFFFDD;
   font-size: 18px;
 }
 
@@ -485,26 +436,13 @@ img {
   }
 }
 
-.features
-  .inner
-  .features-cont
-  .features-list
-  .features-item
-  .text
-  .features-link {
+.features .inner .features-cont .features-list .features-item .text .features-link {
   padding-top: 60px;
   padding-bottom: 40px;
   text-align: center;
 }
 
-.features
-  .inner
-  .features-cont
-  .features-list
-  .features-item
-  .text
-  .features-link
-  a {
+.features .inner .features-cont .features-list .features-item .text .features-link a {
   margin-right: auto;
   margin-left: auto;
 }
@@ -529,8 +467,8 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-  -ms-flex-flow: column-reverse;
-  flex-flow: column-reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
   border-radius: 8px;
   overflow: hidden;
   margin-right: 30px;
@@ -555,7 +493,7 @@ img {
 }
 
 .rec .rec-slick .rec-item .text .price > span {
-  color: #ff0000;
+  color: #FF0000;
 }
 
 .service .service-warp {
@@ -569,8 +507,6 @@ img {
 }
 
 .service .service-warp .service-list {
-  margin-top: 0;
-  margin-bottom: 0;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -589,9 +525,9 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-  -ms-flex-flow: column-reverse;
-  flex-flow: column-reverse;
-  background-color: #f2f2f2;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+  background-color: #F2F2F2;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -661,17 +597,17 @@ img {
 .blog .blog-list dt {
   color: #fff;
   font-size: 13px;
-  background-color: #4d0000;
+  background-color: #4D0000;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 20px;
   width: 75px;
 }
@@ -685,8 +621,8 @@ img {
 
 .blog .blog-list dd {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .blog .blog-list dd > a {
@@ -737,7 +673,7 @@ img {
   background-color: #fff;
   display: block;
   padding: 14px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -749,8 +685,8 @@ img {
 }
 
 .faq .faq-cont .faq-list .faq-item .detail {
-  border-bottom: 1px solid #e5e5e5;
-  background-color: #f2f2f2;
+  border-bottom: 1px solid #E5E5E5;
+  background-color: #F2F2F2;
   padding: 14px;
   display: none;
 }
