@@ -1,4 +1,33 @@
-<?php get_header();//header.phpを取得 ?>
+<!DOCTYPE html>
+<html <?php language_attributes(); //html要素のlang属性を出力 
+        ?>>
+
+<head>
+
+    <?php get_header(); //header.phpを取得 
+    ?>
+
+</head>
+
+<body <?php body_class(); //bodyタグにページの種類に応じたクラス名を与える
+        ?>>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-fixed">
+            <h1 class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/image/logo.png" alt="極楽亭"></h1>
+            <button class="nav-btn" id="nav-btn" type="button" aria-label="メニュー"><span></span><span></span><span></span></button>
+        </div>
+        <div class="nav header-nav" id='nav'>
+            <nav class="nav-warp">
+                <ul class="nav-list">
+                    <li class="item"><a href="#">宿泊予約</a></li>
+                    <li class="item"><a href="#">観光情報</a></li>
+                    <li class="item"><a href="#">よくあるご質問</a></li>
+                    <li class="item"><a href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- メイン -->
     <main>
@@ -8,7 +37,8 @@
         </div>
         <div class="breadcrumb">
             <ul class="breadcrumb-list">
-                <?php mytheme_breadcrumb(); //パンくずナビ ?>
+                <?php mytheme_breadcrumb(); //パンくずナビ 
+                ?>
             </ul>
         </div>
         <!-- 本館の特徴 -->
@@ -232,4 +262,9 @@
         </section>
     </main>
 
-<?php get_footer();//footer.phpを取得 PHPで終了するので閉じタグは不要
+    <?php get_footer(); //footer.phpを取得 PHPで終了するので閉じタグは不要
+    ?>
+
+</body>
+
+</html>
