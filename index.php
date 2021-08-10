@@ -6,6 +6,11 @@
         <div class="top">
             <div class="top-title">祇園の中心に佇む<br>京の極楽浄土</div>
         </div>
+        <div class="breadcrumb">
+            <ul class="breadcrumb-list">
+                <?php mytheme_breadcrumb(); //パンくずナビ ?>
+            </ul>
+        </div>
         <!-- 本館の特徴 -->
         <section class="features cmn-section -black">
             <div class="inner wow animate_animated animate_fadeIn">

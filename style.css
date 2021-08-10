@@ -39,6 +39,8 @@ img {
   height: auto;
 }
 
+/* ヘッダー */
+
 .header .header-fixed {
   background-color: #4d0000;
   display: -webkit-box;
@@ -210,6 +212,32 @@ img {
   }
 }
 
+/* パンくずナビ */
+.breadcrumb {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 28px;
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+}
+
+.breadcrumb-list {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumb-list > li > a {
+  color: #fff;
+}
+
+.breadcrumb-list > li {
+  color: #fff;
+}
+
+/* cmn */
+
 .cmn-section.-black {
   background-color: #000;
 }
@@ -260,6 +288,8 @@ img {
   border-radius: 8px;
   font-size: 14px;
 }
+
+/* フッター */
 
 .footer {
   background-color: #4d0000;
@@ -315,6 +345,8 @@ img {
   font-size: 16px;
 }
 
+/* インデックス */
+
 .top {
   background-image: url(image/top-mv_sp.png);
   background-position: center;
@@ -322,7 +354,7 @@ img {
   height: 674px;
   width: auto;
   position: relative;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -760,4 +792,140 @@ img {
     padding: 25px 50px;
   }
 }
+
+/* 問い合わせ */
+
+.inquiry-image {
+  background-image: url(image/street-409993_1920.png);
+  background-position: center;
+  background-size: cover;
+  height: 296px;
+  width: auto;
+  position: relative;
+  margin-top: 110px;
+}
+
+.inquiry .cmn-title {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 28px;
+}
+
+.inquiry .content {
+  text-align: center;
+  color: #fff;
+}
+
+.inquiry .content .inquiry-form .inquiry-list {
+  list-style: none;
+}
+
+.inquiry .content .inquiry-form .inquiry-list .label {
+  font-size: 16px;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+.inquiry .content .inquiry-form .inquiry-list .text-box {
+  color: #fff;
+}
+
+.inquiry .content .inquiry-form .inquiry-list .text-box > input {
+  width: 800px;
+  height: 50px;
+  background-color: black;
+  border: 0.5px solid #ffffff;
+  opacity: 1;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.inquiry .content .inquiry-form .inquiry-list .num-box .mwform-tel-field {
+  color: #fff;
+}
+
+.inquiry
+  .content
+  .inquiry-form
+  .inquiry-list
+  .num-box
+  .mwform-tel-field
+  > input {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border: 0.5px solid #ffffff;
+  opacity: 1;
+  color: #fff;
+}
+
+.inquiry .content .inquiry-form .inquiry-list .text-area {
+  color: #fff;
+}
+
+.inquiry .content .inquiry-form .inquiry-list .text-area > textarea {
+  width: 800px;
+  height: 240px;
+  background-color: black;
+  border: 0.5px solid #ffffff;
+  opacity: 1;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.poricy {
+  font-size: 16px;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.poricy > a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.check-box .mwform-checkbox-field .mwform-checkbox-field-text {
+  color: #fff;
+  padding-top: 30px;
+}
+
+.entry-btn {
+  padding-top: 64px;
+  padding-bottom: 20px;
+}
+
+.entry-btn > input {
+  width: 200px;
+  height: 50px;
+  background-color: #b8860b;
+  color: #fff;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+.back-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+
+.back-btn > input {
+  width: 200px;
+  height: 50px;
+}
+
+.ns-box > p {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
