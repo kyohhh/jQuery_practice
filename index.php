@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); //html要素のlang属性を出力 
+<html <?php language_attributes(); //html要素のlang属性を出力
         ?>>
 
 <head>
 
-    <?php get_header(); //header.phpを取得 
+    <?php get_header(); //header.phpを取得
     ?>
 
 </head>
@@ -37,7 +37,7 @@
         </div>
         <div class="breadcrumb">
             <ul class="breadcrumb-list">
-                <?php mytheme_breadcrumb(); //パンくずナビ 
+                <?php mytheme_breadcrumb(); //パンくずナビ
                 ?>
             </ul>
         </div>
@@ -262,8 +262,7 @@
         </section>
     </main>
 
-    <?php get_footer(); //footer.phpを取得 PHPで終了するので閉じタグは不要
-    ?>
+    <?php get_footer(); ?>
 
 </body>
 
